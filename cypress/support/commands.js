@@ -25,5 +25,5 @@
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
 
 Cypress.Commands.add('switchToIframes',(iFrame) => {
-   return cy.get(iFrame).its('0.contentDocument.body').then(cy.wrap);
-})
+   return cy.get(iFrame).its('0.contentDocument.body').should('not.be.empty').then(cy.wrap);
+});

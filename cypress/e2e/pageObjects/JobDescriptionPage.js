@@ -9,7 +9,6 @@ class JobDescriptionPage extends CareersPage{
     getjobTitle(option){
         return this.getElementFromFrameWithXpath(this.FRAME,`//*[@id="gnewtonJobDescriptionText"]//b[contains(text(),"${option}")]`);
     }
-
 }
 
 export default new JobDescriptionPage();

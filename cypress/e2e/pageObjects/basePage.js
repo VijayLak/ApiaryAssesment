@@ -29,8 +29,4 @@ export default class basePage {
     realElementMouseClick(element){
         return element.realClick('mouse');
     }
-
-    waitForElement(element){
-        return cy.contains(element);
-    }
 }
